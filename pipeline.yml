@@ -1,6 +1,6 @@
 ---
 AWSTemplateFormatVersion: "2010-09-09"
-Description: CodePipeline for build and test IaC
+Description: CodePipeline for build and test IaC deployment
 Parameters:
   GitHubUser:
     Type: String
