@@ -13,7 +13,7 @@ phases:
       - pip3 install taskcat
   build:
     commands:
-      - taskcat run test
+      - taskcat test run
   post_build:
     commands:
       - echo Build completed. Publishing artificats

@@ -169,7 +169,7 @@ Resources:
               ActionTypeId:
                 Category: Source
                 Owner: ThirdParty
-                Version: "2"
+                Version: "1"
                 Provider: GitHub
               OutputArtifacts:
                 - Name: SourceArtifacts
