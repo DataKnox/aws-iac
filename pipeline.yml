@@ -167,7 +167,7 @@ Resources:
         - Name: Build
           Actions:
             - InputArtifacts:
-                - Name: SetupArtifacts
+                - Name: SourceArtifacts
               Name: RunTaskCat
               ActionTypeId:
                 Category: Test
