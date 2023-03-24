@@ -1,10 +1,11 @@
 version: 0.2
 phases:
   install:
-    runtime-versions: python3.7
+    runtime-versions:
+      python: 3.9
   pre_build:
     commands:
-      - Prep the environment
+      - echo Prep the environment
       - echo beginning build
       - curl -O https://bootstrap.pypa.io/get-pip.py
       - python3 get-pip.py

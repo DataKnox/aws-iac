@@ -72,7 +72,22 @@ Resources:
                   - iam:PassRole
                 Resource: "*"
                 Effect: Allow
+              - Action:
+                  - codestar-connections:UseConnection
+                Resource: "*"
+                Effect: Allow
+              - Action:
+                  - appconfig:StartDeployment
+                  - appconfig:GetDeployment
+                  - appconfig:StopDeployment
+                Resource: "*"
+                Effect: Allow
+              - Action:
+                  - codecommit:GetRepository
+                Resource: "*"
+                Effect: Allow
             Version: "2012-10-17"
+
   CodeBuildRole:
     Type: AWS::IAM::Role
     Properties:
@@ -154,7 +169,7 @@ Resources:
               ActionTypeId:
                 Category: Source
                 Owner: ThirdParty
-                Version: "1"
+                Version: "2"
                 Provider: GitHub
               OutputArtifacts:
                 - Name: SourceArtifacts
