@@ -5,7 +5,7 @@ phases:
       python: 3.9
   post_build:
     commands:
-      - aws s3 cp --recursive --acl public-read ./taskcat_outputs s3://${SiteBucket}/
+      - aws s3 cp --recursive --acl public-read ./taskcat_outputs s3://pipeline-taskcat-sitebucket-1qu51cz6bcob1/
 artifacts:
   type: zip
   files:
